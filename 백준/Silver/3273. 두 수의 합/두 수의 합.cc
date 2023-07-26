@@ -18,7 +18,7 @@ int main() {
     int cnt = 0;
     for (auto i : m) {
         int target = x-i.first;
-        if (target != i.first && m.find(target) != m.end() && i.second <= m.find(target)->second) {cnt++;}
+        if (target != i.first && m.find(target) != m.end()) {cnt++;}
     }
-    cout << cnt;
+    cout << cnt/2;
 }
